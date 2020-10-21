@@ -1,0 +1,22 @@
+header {
+  justify-content: space-around;
+  align-items: flex-end;
+  display: flex;
+  background-color: rgba(0,0,0,0.8);
+}
+.logo {
+  width: 30vw;
+  /*background-color: white;*/
+}
+#header-img {
+/*  background-color: blue;*/
+  left: 10px;
+  height: 45px;
+  width: 45px;
+  position: sticky;
+}
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
