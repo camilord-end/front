@@ -10,12 +10,16 @@ body {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-
 }
 header {
-  justify-content: space-around;
-  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #CCC;
 }
 .logo {
@@ -40,9 +44,15 @@ header {
 
 #submit {
   color: black;
+  align: center;
 }
-.items {
+.form-group {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  width: 300px;
+
 }
 #partnership {
   display: flex;
@@ -50,10 +60,49 @@ header {
   align-items: center;
   justify-content: center;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 100px;
   background-color: #DDD;
   border-radius: 5px;
 }
+.items {
+  display: flex;
+}
 #features {
-  top: 200px;
+  padding-top: 50px;
+  margin-top: 20px;
+  background-color: #DDD;
+  border-radius: 10px;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: rgba(19, 151, 225, 1);
+}
+@media (max-width:550px) {
+  .icon {
+    display: none;
+  }
+}
+#features .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+  text-align: justify;
+  margin-right: 25px;
+}
+#hiw {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #DDD;
+  border-radius: 10px;
 }
