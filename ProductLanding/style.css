@@ -1,8 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #EEE;
+}
+.main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+
+}
 header {
   justify-content: space-around;
   align-items: flex-end;
   display: flex;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #CCC;
 }
 .logo {
   width: 40vw;
@@ -19,4 +33,27 @@ header {
   header {
     flex-wrap: wrap;
   }
+}
+.nav-link{
+  color: rgba(19, 151, 225, 1);
+}
+
+#submit {
+  color: black;
+}
+.items {
+  display: flex;
+}
+#partnership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #DDD;
+  border-radius: 5px;
+}
+#features {
+  top: 200px;
 }
