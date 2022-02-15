@@ -6,9 +6,8 @@ class Fruits extends React.Component {
       return (
         <div>
           <h2>Fruits:</h2>
-          { /* Change code below this line */ }
-  
-          { /* Change code above this line */ }
+            <Citrus />
+            <NonCitrus />
         </div>
       );
     }
@@ -22,11 +21,35 @@ class TypesOfFood extends React.Component {
       return (
         <div>
           <h1>Types of Food:</h1>
-          { /* Change code below this line */ }
-  
-          { /* Change code above this line */ }
+          <Fruits />
           <Vegetables />
         </div>
       );
     }
+};
+
+const Citrus = () => {
+  return (
+    <div>
+      <ul>
+        <li>Lemon</li>
+        <li>Lime</li>
+        <li>Orange</li>
+        <li>GrapeFruit</li>
+      </ul>
+    </div>
+  );
+};
+
+const NonCitrus = () => {
+  return (
+    <div>
+      <ul>
+        <li>Apples</li>
+        <li>Blueberries</li>
+        <li>Strawberries</li>
+        <li>Bananas</li>
+      </ul>
+    </div>
+  );
 };

@@ -30,4 +30,4 @@ class TypesOfFood extends React.Component {
         </div>
       );
     }
-  };
+};
