@@ -66,3 +66,11 @@ class AppWrapper extends React.Component {
     );
   }
 };
+
+const state = [];
+
+const mapStateToProps= (state) => {
+  return {
+    messages: state
+  }
+}
