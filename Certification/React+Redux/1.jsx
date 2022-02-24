@@ -53,3 +53,16 @@ const messageReducer = (previousState = [], action) => {
       return previousState;
   }
 };
+
+const store = Redux.createStore(messageReducer);
+
+const Provider = ReactRedux.Provider;
+class AppWrapper extends React.Component {
+  render(){
+    return(
+      <Provider store={store}>
+        <DisplayMessages />
+      </Provider>
+    );
+  }
+};
