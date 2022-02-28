@@ -1,94 +1,135 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>This is a Form</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d588b51202.js" crossorigin="anonymous"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      
+    <title>Survey From</title>
   </head>
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div id="main">
-      <header class="header">
-        <h1 id="title">
-          This is a ramdom form
-        </h1>
-        <p id="description">
-        This is a survey to get your thoughs on something .
-        </p>
-      </header>
-      <form id="survey-form">
-        <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input id="name" type="text" name="name" placeholder="Enter your name."class="form-control" required>
-        </div>
-        <div class="form-group">
-          <label id="email-label" for="email">E-mail</label>
-          <input id="email" type="email" name="email" placeholder="Enter your email."class="form-control" required>
-        </div>
-        <div class="form-group">
-          <label id="number-label" for="number">Age</label>
-          <input id="number" type="number" name="number" placeholder="Age"class="form-control" min=10 max= 80>
-        </div>
-        <div class="form-group">
-          <label for="dropdown">How much do you like this form.</label>
-          <select class="form-control" id="dropdown">
-            <option>A lot</option>
-            <option>A little bit</option>
-            <option>I dont know</option>
-            <option>I dont like it</option>
-            <option>I Hate it</option>
-          </select>
-        </div>
-        <div class="form-check">
-          <p>Whould you recommend this form to a friend?</p>
-          <div id="form-group">
-            <input class="form-check-input" type="radio" name="recomend" id="recomended" value="Yes" checked>
-            <label class="form-check-label" for="recomended">
-              Yes, of course!
-            </label>
+    <div class="container-fluid">
+      <h1 id="title" class="text-center">This is a Form Sample</h1>
+      <blockquote class="blockquote text-center">
+        <p>Thank you for looking at this form </p>
+      </blockquote>
+      <div id="survey-container" class="">
+        <form id="survey-form" class="">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your name here" required>
+            <label id="name-label" for="name">Enter your Name</label>
           </div>
-          <div id="form-group">
-            <input class="form-check-input" type="radio" name="recomend" id="maybe" value="Maybe">
-            <label class="form-check-label" for="maybe">
-              Maybe, i'think about it.
-            </label>
+          <br>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+            <label id="email-label" for="email">Email address</label>
           </div>
-          <input class="form-check-input" type="radio" name="recomend" id="no" value="no">
-          <label class="form-check-label" for="no">
-            No >:( .
-          </label>
-        </div>
-        <div class="form-check">
-          <p>What whould you like to see improved?</p>
-          <div id="form-group">
-            <input class="form-check-input" type="checkbox" value="class-desing" id="classes">
-            <label class="form-check-label" for="classes">
-              More this.
-            </label>
+          <br>
+          <div class="form-text- ">
+            <label id="number-label" for="number">Age
+              <span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+              placeholder="Age"/>
           </div>
-          <div ="form-group">
-            <input class="form-check-input" type="checkbox" value="systems" id="systems">
-            <label class="form-check-label" for="Systems">
-              More that.
-            </label>
+          <br>
+          <div class="form-select- ">
+            <p id="select-text">Which of the following elements do you prefer</p>
+            <select id="dropdown" name="fruits" class="form-select" aria-label="Default select">
+              <option disabled selected>Your favorite fruit</option>
+              <option value="Apple">Apple</option>
+              <option value="Pear">Pear</option>
+              <option value="Grape">Grapes</option>
+            </select>
+            <br>
+            <select id="dropdown" name="days" class="form-select" aria-label="Default select">
+              <option disabled selected>Your favorite day of the week</option>
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+            </select>
+            <br>
           </div>
-          <input class="form-check-input" type="checkbox" value="content" id="content">
-          <label class="form-check-label" for="content">
-            Less this.
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="text-area">Tell us how to improve this form !</label>
-          <textarea class="form-control" id="input-text-area" rows="3" placeholder="Enter your comment here c:"></textarea>
-        </div>
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button btn btn-outline-light">
-            Submit
-          </button>
-        </div>
-      </form>
+          <div class="form-check- ">
+            <p>Would you recommend this from to anyone ?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user-recommend" id="yes-radio" value="yes" checked>
+              <label class="form-check-label" for="yes-radio" id="yes-radio">
+                Yes, I love this form.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user-recommend" id="no-radio" value="no">
+              <label class="form-check-label" for="no-radio" id="no-radio">
+                No, I dont like this form.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="user-recommend" id="idk-radio" value="idk">
+              <label class="form-check-label" for="idk-radio" id="idk-radio">
+                I'm not sure yet.
+              </label>
+            </div>
+          </div>
+          <br>
+          <div class="checkboxes">
+            <p>Which of the following activities do you like</p>
+            <div class="row justify-content-evenly">
+              <div class="form-check form-check-inline col-4">
+                <input class="form-check-input" type="checkbox" id="sports" value="sports">
+                <label class="form-check-label" for="sports">Sports</label>
+              </div>
+              <div class="form-check form-check-inline col-4">
+                <input class="form-check-input" type="checkbox" id="videogames" value="videogames">
+                <label class="form-check-label" for="videogames">Video-games</label>
+              </div>
+            </div>
+            <div class="row justify-content-evenly">
+              <div class="form-check form-check-inline col-4">
+                <input class="form-check-input" type="checkbox" id="dancing" value="dancing">
+                <label class="form-check-label" for="dancing">Dancing</label>
+              </div>
+              <div class="form-check form-check-inline col-4">
+                <input class="form-check-input" type="checkbox" id="sleeping" value="sleeping">
+                <label class="form-check-label" for="sleeping">Sleeping</label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="textarea">
+            <div class="mb-3">
+              <label for="textarea" class="form-label">Any comments or suggestions?</label>
+              <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="submit" class="btn btn-primary" type="submit">Submit Form</button>
+          </div>
+          <br>
+        </form>
+      </div>
     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
