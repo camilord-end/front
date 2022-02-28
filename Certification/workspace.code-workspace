@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\JS\\js"
+		},
+		{
+			"name": "front",
+			"path": ".."
+		},
+		{
+			"name": "python",
+			"path": "..\\..\\..\\Python\\python"
+		},
+		{
+			"name": "react-practice",
+			"path": "..\\..\\..\\Practica\\react-practice"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "front"
+	}
+}
